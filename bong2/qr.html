@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>봉투</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap vh100">
+        <div class="left_pc">
+            <div class="top_logo">
+                <img src="img/left_top.png" alt="봉투">
+            </div>
+            <div class="qr_wrap gray_bg">
+                <div><img src="img/qr_bong2.png" alt="봉투 바로가기"></div>
+                <div class="qr_txt">
+                    <h3>경조사 보내기 및 공유하는 방법</h3>
+                    <p>1. 봉투 서비스 회원 가입 후 모바일 경조사 생성<br>2. PC 또는 스마트폰에서 봉투 사이트 접속<br>3. 모바일 청첩장, 부고, 돌잔치, 모임 초대장의 카카오톡, 문자 공유버튼을 이용하시거나, 개별 경조사에 생성된 QR을 공유해 주세요.<br>4. 초대 받은 가족 및 지인분들은 회원가입 없이 간편하게 이용 가능합니다.</p>
+                </div>
+            </div>
+        </div><!-- // left_pc -->
+        <div class="right_mobile sub">
+            <header>
+                <div class="header_inner inner_wth clear">
+                    <div class="back" onclick="history.back(-1);"><img src="img/back.svg"></div>
+<!--                    <h1 class="logo"><a href="index.html"><img src="img/bong2_logo.svg" alt="봉투"></a></h1>-->
+                    <h2 class="header_title">QR결제 자세히보기</h2>
+<!--                    <a href="#"><img src="img/user.svg" alt="마이페이지"></a>-->
+                </div>
+            </header>
+            <main class="qr_slide_wrap">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide qr_slide">
+                            <div class="qr_phone qr_phone_main"><img src="img/visual_phone.png" alt="핸드폰"></div>
+                            <p class="title">경조사 보내기 및 공유하는 방법</p>
+                        </div>
+                        <div class="swiper-slide qr_slide">
+                            <div class="qr_phone"><img src="img/qr_phone_1.png" alt="핸드폰"></div>
+                            <p> 봉투 서비스 회원 가입 후<br>모바일 경조사 생성</p>
+                        </div>
+                        <div class="swiper-slide qr_slide">
+                            <div class="qr_phone"><img src="img/qr_phone_2.png" alt="핸드폰"></div>
+                            <p>PC 또는 스마트폰에서<br>봉투 사이트 접속</p>
+                        </div>
+                        <div class="swiper-slide qr_slide">
+                            <div class="qr_phone"><img src="img/qr_phone_3.png" alt="핸드폰"></div>
+                            <p class="long_txt">모바일 청첩장, 부고, 초대장의<br>카카오톡, 문자 공유버튼을 이용하시거나,<br>개별 경조사에 생성된 QR을 공유해 주세요.</p>
+                        </div>
+                        <div class="swiper-slide qr_slide">
+                            <div class="qr_phone"><img src="img/qr_phone_4.png" alt="핸드폰"></div>
+                            <p class="long_txt">초대 받은 가족 및 지인분들은<br>회원가입 없이<br>간편하게 이용 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </main>
+            <!-- <footer class="fff_bg footer_btm">
+                <p class="dgray_txt">COPYRIGHT &copy; 봉투 ALL RIGHTS RESERVED.</p>
+            </footer> -->
+        </div><!-- // right_mobile -->
+    </div>
+</body>
+</html>

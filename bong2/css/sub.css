@@ -1,0 +1,996 @@
+@charset "utf-8";
+
+.ipt{
+    outline: none;
+    width: 100%;
+    height: 42px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding-left: 12px;
+    font-weight: 400;
+}
+form h5{
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+form ul li{
+    margin-bottom: 24px;
+}
+.essential:after{
+    content: '*';
+    color: #f29c9c;
+}
+.ipt_btn_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.ipt_btn_wrap .ipt{
+    width: 65.5%; /* 224 / 342 */
+}
+.form_btn{
+    width: 31%; /* 106 / 342 */
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.sub_btn{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.vh100{
+    width: 100%;
+    height: 100vh;
+}
+.flex_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+main{
+    padding-top: 60px;
+}
+.sub_title{
+    text-align: center;
+    padding-top: 43px;
+}
+.sub_title h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.sub_title p{
+    font-size: 1.4rem;
+    margin-top: 16px;
+}
+.btn_area{
+    margin-top: 36px;
+}
+.btn_bottom{
+    margin-top: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 52px;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1;
+}
+.btn_area .fff_btn{
+    border: 1px solid #222;
+    color: #222;
+    line-height: 46px;
+}
+
+/* header */
+.sub header{
+    border-bottom: 1px solid #EAEBEC;
+    position: absolute;
+    width: 100%;
+}
+.back{
+    width: 28px;
+    cursor: pointer;
+    position: absolute;
+    left: 5%; top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.right_mobile .header_inner h1{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 0;
+}
+.header_title{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.8rem;
+/*    font-weight: normal;*/
+}
+
+/* footer */
+.footer_btm{
+    width: 100%;
+    position: absolute;
+    left: 0; bottom: 0;
+}
+
+/* login */
+.login .sub_title h2{font-size: 3rem;}
+.login_frm_wrap{
+    margin-top: 28px;
+}
+.login_frm li{margin-bottom: 0;}
+.login_frm li:last-child{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.login_frm li:last-child label,
+.login_frm li:last-child a{
+    font-size: 1.4rem;
+}
+.p_join_wrap{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.p_join_wrap a{
+    font-weight: 700;
+    margin-left: 9px;
+}
+
+.pw_wrap{position: relative;}
+.pw_wrap i{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: #bdbdbd;
+    cursor: pointer;
+}
+
+/* join 회원가입 */
+.join_frm_wrap{
+    padding-top: 20px;
+}
+
+.agree_group{
+    padding-top: 24px;
+}
+.agree_group label{
+    font-size: 1.4rem;
+}
+.agree_title{position: relative;}
+.agree_open{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.agree_open:after{
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 9px;
+    background: url(../img/open-arrow.svg) no-repeat center/contain;
+}
+
+.agree_open.on:after{
+    background-image: url(../img/close-arrow.svg);
+}
+
+.agree_txt{
+    margin-top: 10px;
+    padding: 13px 20px;
+    max-height: 140px;
+    overflow: auto;
+    display: none;
+}
+.agree_txt p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.mkt_wrap{
+    margin-top: 10px;
+    padding-left: 21px;
+}
+.mkt_wrap span:last-child{
+    margin-left: 12px;
+}
+
+.join_policy p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.join_policy table{
+    width: 100%;
+    border: 1px solid #222;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+.join_policy thead th{
+    font-weight: 400;
+    padding: 3px 0;
+    border-bottom: 1px solid #222;
+    border-right: 1px solid #222;
+    background: #efefef;
+}
+.join_policy tbody td{
+    padding: 4px;
+    border-right: 1px solid #222;
+}
+.join_policy thead th:last-child,
+.join_policy tbody td:last-child{
+    border-right: none;
+}
+.join_policy tbody tr:last-child td{
+    border-top: 1px solid #222;
+}
+
+/* id pw 찾기 */
+.tabs_nav{
+    width: 100%;
+    height: 50px;
+    background: #f6f6f6;
+    display: flex;
+}
+.tabs_nav li{
+    width: 50%;
+    padding: 0 5%;
+}
+.tabs_nav li a{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 48px;
+}
+.tabs_nav li a.active{
+    font-weight: 700;
+    border-bottom: 2px solid;
+}
+.find_frm_wrap{padding-top: 20px;}
+
+/* mypage - 마이페이지 */
+/* .mypage{
+    min-height: 100vh;
+} */
+.my_title{
+    padding: 13px 0 16px;
+    border-bottom: 1px solid #EAEBEC;
+}
+.my_title h2{
+    font-size: 1.6rem;
+    margin-bottom: 21px;
+}
+.my_title .dflex{
+    justify-content: space-between;
+}
+.my_title label{
+    font-size: 1.4rem;
+    /* font-weight: 700; */
+}
+.my_title button{
+    font-size: 1.4rem;
+    border-bottom: 1px solid #696a6c;
+    padding-bottom: 4px;
+}
+
+.my_list>li{
+    padding: 20px 0 29px;
+    border-bottom: 1px solid #EAEBEC;
+}
+.my_list_top{
+    justify-content: space-between;
+}
+.my_list_top .my_list_title label{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.my_list_top .form_btn{
+    width: 106px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.my_list .my_list_table{
+    margin-top: 16px;
+}
+.my_list .my_list_table>li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.my_list .my_list_table>li:last-child{margin-bottom: 0;}
+.my_list_table h4,
+.my_list_table p{
+    font-size: 1.3rem;
+}
+.my_list_table h4{
+    font-weight: normal;
+}
+.my_list_table p{
+    text-align: right;
+    width: 50%;
+}
+
+.my_con .paging{
+    margin: 35px 0 55px;
+    text-align: center;
+}
+.my_con .paging ul li{
+    display: inline-block;
+    margin: 0 4px;
+}
+.my_con .paging ul li a{
+    font-size: 1.4rem;
+    color: rgba(0,0,0,.5);
+}
+.my_con .paging ul li a.active{
+    font-weight: 700;
+    color: #222;
+}
+.paging_btn{
+    display: block;
+    width: 7px;
+}
+.my_con .paging a img{width: 100%;}
+
+/* mypage detail */
+.header_title_long{
+    font-size: 1.7rem;
+    position: static;
+    transform: translate(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.mypage_detail .my_title h2{
+    margin-bottom: 0;
+}
+.mypage_detail .my_list_title{
+    justify-content: space-between;
+}
+.mypage_detail .my_list_title b{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.mypage_detail .my_list_title i{
+    font-size: 1.3rem;
+    text-align: right;
+    width: 60%;
+}
+.my_list_top div:last-child{
+    margin-top: 9px;
+    font-size: 1.2rem;
+}
+.mypage_detail .my_list_table{
+    margin-top: 24px;
+}
+.mypage_detail .my_list_table p{
+    font-size: 1.4rem;
+}
+.mypage_detail .my_list>li{
+    padding-bottom: 20px;
+}
+
+.my_con .my_list_none>li{
+    padding: 30px 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* event - 경조사 만들기 */
+.letter{
+    width: 22%; /* 74 / 337.5 */
+    margin: 0 auto;
+    padding-top: 57px;
+}
+.event_frm_wrap ul li{
+    text-align: center;
+}
+.event_frm_wrap ul li:nth-child(2){
+    font-size: 1.6rem;
+    margin-top: 22px;
+}
+.event_frm_wrap ul li:last-child{
+    margin: 14px auto 0;
+    width: 80%;
+}
+
+/* event1 - 청첩장 만들기 */
+.step_wrap ul{
+    display: flex;
+    padding: 21px 0;
+}
+.step_wrap ul li{
+    width: 50%;
+    padding: 14px 0 6px;
+}
+.step_wrap ul li:first-child{
+    border-right: 1px solid #696a6c;
+}
+.step_wrap ul li span{
+    display: block;
+    margin: 0 auto;
+    width: 71px;
+    height: 26px;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.step_wrap ul li p{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.frm_title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 15px 5% 28px;
+}
+.event_write_frm_wrap ul li{
+    text-align: left;
+    float: left;
+    width: 100%;
+}
+
+.gift{margin-bottom: 0;}
+.gift ul li:nth-child(2n-1){
+    padding-right: 6px;
+}
+.gift ul li:nth-child(2n){
+    padding-left: 6px;
+}
+.gift ul li label b{
+    font-size: 1.5rem;
+}
+
+.gift_img{
+    display: block;
+    width: 100%;
+    margin-top: 6px;
+    height: 165px;
+    overflow: hidden;
+}
+.gift_img img{width: 100%;}
+
+.gift_notice p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/* event share 공유하기 */
+.event_share .letter{
+    padding-top: 80px;
+}
+.event_share .sub_title{padding-top: 32px;}
+.event_share .sub_title h2{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+.event_share .sub_title p{
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.btn_dflex a:last-child{
+    margin-left: 6px;
+    margin-right: 0;
+}
+
+.event_share .btn_area{
+    margin-top: 55px;
+}
+
+/* 모바일 청첩장,돌잔치 */
+.invitation{overflow-x: hidden;}
+.invitation h2,
+.invitation p{
+    font-family: 'Nanum Myeongjo', serif;
+}
+.invitation h2{
+    font-size: 2rem;
+}
+.invitation p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+}
+
+.photo{
+    padding: 60px 0 85px;
+    position: relative;
+}
+.photo_title h2{
+    text-align: center;
+    line-height: 1.5;
+}
+.photo_title .fz25{font-size: 2.5rem;}
+.title_line:after{
+    content:'';
+    display: block;
+    width: 14%; /* 47 / 342 */
+    height: 2px;
+    background: #f29c9c;
+    margin: 15px auto 21px;
+}
+.photo_title p{
+    text-align: center;
+    margin-bottom: 65px;
+}
+.photo_title p span{display: block;}
+
+.photo_wrap{
+    position: relative;
+    z-index: 1;
+}
+.photo .deco{
+    width: 148px;
+    position: absolute;
+    right: -52px; bottom: 28px;
+    z-index: 0;
+}
+
+.photo_inner>p{
+    margin-top: 16px;
+    text-align: center;
+    font-size: 1.6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.call{
+    padding: 120px 0 97px;
+}
+.invitation .pleft8{padding-left: 8%; /* 28 / 342 */}
+.call .call_text{
+    padding-bottom: 63px;
+    border-bottom: 1px solid #EAEBEC;
+}
+.call .call_text h2,
+.map_title h2{
+    margin-bottom: 39px;
+}
+.call .call_text p{
+    font-size: 1.4rem;
+    line-height: 2;
+}
+.call_detail{
+    padding-top: 50px;
+    font-size: 1.6rem;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.call_detail>div:first-child{
+    margin-bottom: 29px;
+}
+.call_detail b{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.call_detail .mo::before{
+    content: '·';
+    margin: 0 5px;
+}
+.call_detail .space{
+    margin-left: 26px;
+}
+.call_detail a{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: url(../img/phone.svg) no-repeat center/contain;
+    margin-left: 29px;
+    vertical-align: -2px;
+}
+
+.map{
+    padding: 120px 0 87px;
+}
+.map_title{
+    padding-bottom: 43px;
+}
+.map_title p{
+    font-size: 1.4rem;
+    line-height: 2;
+}
+.map_title p:last-child{
+    margin-top: 14px;
+}
+.map .map_wrap{
+    width: 100%;
+    height: 210px;
+    background: #f6f6f6; /* 임시 */
+}
+.map .map_trans{
+    padding-top: 37px;
+}
+.map .map_trans p{
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.map .map_trans p:last-child{margin-bottom: 0;}
+.map .map_trans p span{
+    display: block;
+    font-weight: normal;
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+
+.share{
+    padding-top: 65px;
+}
+.share_text{
+    text-align: center;
+}
+.share_text p{
+    line-height: 1.6;
+}
+.share_text p:last-child{
+    margin-top: 22px;
+}
+.share .btn_area{
+    margin: 48px auto 20px;
+}
+.share .btn_area a{
+    margin-right: 3.5%; /* 12 / 342 */
+    font-size: 1.4rem;
+}
+.invitation .share .btn_area a:last-child{
+    margin: 0;
+}
+.pt0{padding-top: 0;}
+
+.club{
+    margin-top: 30px;
+}
+
+/* 모바일 부고 만들기 */
+.frm_title{position: relative;}
+.frm_title .add{
+    position: absolute;
+    right: 0; top: 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.frm_title .add:before{
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../img/plus-square.svg) no-repeat center/contain;
+    vertical-align: -2px;
+    margin-right: 3px;
+}
+.added_info:first-child{border-top: none; padding-top: 0;}
+.added_info{
+    border-top: 1px solid #EAEBEC;
+    padding-top: 15px;
+}
+.added_info li p{
+    font-size: 1.4rem;
+}
+.added_info .mb12{margin-bottom: 12px;}
+
+/* 모바일 부고 obituary */
+.flex_info{padding-top: 0;}
+.obituary_pv{padding-top: 60px;}
+.form_top{
+    width: 100%;
+    height: 125px;
+    padding-top: 32px;
+}
+.form_top>div{
+    width: 38px;
+    margin: 0 auto;
+}
+.form_top p{
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 11px;
+}
+
+.event_title{
+    padding: 21px 0 18px;
+    position: relative;
+}
+.event_title span{
+    font-size: 1.4rem;
+}
+.event_title h2{
+    font-size: 1.8rem;
+    padding-top: 6px;
+}
+.event_title h2 b{font-weight: bold;}
+.event_title .print{
+    position: absolute;
+    right: 0; top: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.event_title .print div{
+    width: 48px;
+    margin-bottom: 4px;
+}
+.event_title .print button{
+    font-size: 1.3rem;
+}
+.event_title .print button:before{
+    content:'';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../img/printer.svg) no-repeat center/contain;
+    padding-right: 6px;
+    vertical-align: middle;
+}
+
+/* QR코드 인쇄 (청첩장,돌잔치,초대장에 추가) - 21.11.19 */
+.share_inner .event_title{
+    position: static;
+    padding-bottom: 0;
+}
+.share_inner .event_title .print{
+    position: static;
+    display: block;
+}
+.share_inner .event_title .print>div{
+    margin: 0 auto 4px;
+}
+.share_inner .event_title .print button{
+    display: block;
+    margin: 0 auto;
+}
+.share .btn_area{
+    margin-top: 21px;
+}
+
+
+.flex_info .info h3{
+    font-size: 1.6rem;
+}
+.info_detail{
+    border-top: 2px solid #222;
+    border-bottom: 1px solid #222;
+    margin-top: 5px;
+    padding-top: 11px;
+}
+.flex_info .info li{
+    display: flex;
+    margin-bottom: 8px;
+}
+.flex_info .info li h4{
+    width: 17.251%; /* 59 / 342 */
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+.flex_info .info li p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.funeral{
+    padding-top: 9px;
+    border-bottom: 2px solid #222;
+}
+.funeral li p span{display: block;}
+.funeral .time{
+    margin-left: 12.281%; /* 42 / 342 */
+    font-size: 1.4rem;
+    padding: 8px 0 17px;
+}
+.funeral .time:before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/clock.svg) no-repeat center/contain;
+    vertical-align: -5px;
+}
+
+.funeral_map{
+    padding-top: 18px;
+}
+.funeral_map h3{
+    margin-bottom: 10px;
+}
+.funeral_map .map_wrap{
+    width: 100%;
+    height: 125px;
+    background: #f6f6f6; /* 임시 */
+}
+.funeral_map ul{
+    padding-top: 10px;
+}
+
+.obituary .btn_area a{
+    margin-right: 3%;
+    font-size: 1.4rem;
+}
+.obituary .btn_area a:last-child{margin: 0;}
+
+/* 부의금 보내기 obituary_form */
+.event_form .info li{
+    align-items: center;
+}
+.event_form form li .ipt{
+    height: 32px;
+    font-size: 1.4rem;
+}
+.event_form .info li h4{
+    width: 34.5%; /* 118 / 342 */
+}
+.event_form .info li .ipt_wrap{
+    width: 65.5%;
+}
+
+.event_form .payment{
+    padding-top: 10px;
+}
+.event_form .info .money{
+    align-items: flex-start;
+    border-bottom: 1px dotted #222;
+    padding-bottom: 12px;
+}
+.event_form .info .direct_form{
+    align-items: flex-start;
+}
+.event_form .info .money h4,
+.event_form .info .direct_form h4{
+    padding-top: 8px;
+}
+.event_form .payment ul .money>div:last-child{
+    width: 65.5%;
+}
+.event_form .payment ul .money .ipt_wrap{
+    width: 100%;
+    position: relative;
+}
+.won_ab{
+    position: absolute;
+    right: 12px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+}
+.amount{
+    text-align: right;
+    padding-right: 28px;
+}
+.event_form .payment ul .money p{
+    padding-top: 8px;
+}
+.small_ipt_wrap{
+    display: flex;
+}
+.small_ipt{
+    margin-right: 1%;
+}
+.small_ipt:last-child{
+    margin: 0;
+}
+.small_ipt .ipt{
+    padding-left: 10px;
+}
+.expiry .small_ipt{
+    width: 24%;
+}
+.event_form .card_pw h4 span{
+    font-size: 1.2rem;
+}
+
+/* 부의금 결제완료 페이지 - obituary_complete */
+.top_complete{height: 130px;}
+.top_complete p{
+    color: #222;
+    font-weight: 700;
+}
+.top_complete p span{
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    font-weight: normal;
+}
+.event_form_complete ul li{
+    justify-content: space-between;
+}
+.bill{
+    padding-top: 10px;
+    border-bottom: 1px dotted #222;
+}
+.bill_p{
+    padding-top: 10px;
+}
+.bill_p p{
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+/* 축의금 결제 wedding_form */
+.event_pay .form_top>div{
+    width: 83px;
+}
+.event_pay .form_top{
+    height: 90px;
+}
+
+.event_complete .form_top>div{
+    margin-bottom: 5px;
+}
+.event_complete .top_complete{
+    height: 142px;
+}
+.event_form_complete .info_detail{margin-top: 0;}
+
+/* qr 자세히보기 */
+.qr_slide_wrap{
+    height: 100vh;
+    overflow: hidden;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+    }
+.qr_slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.qr_phone{
+    width: 218px;
+    margin-top: -40%;
+}
+.qr_phone_main{
+    width: 242px;
+    margin-left: 25px;
+}
+.qr_slide p{
+    margin-top: 28px;
+    font-size: 2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.qr_slide .title{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.qr_slide .long_txt{
+    font-size: 1.8rem;
+    width: 87%;
+}
+
+.qr_slide_wrap .swiper-pagination-bullet-active{
+    background: #f29c9c;
+}
+.qr_slide_wrap .swiper-container-horizontal>.swiper-pagination-bullets, .qr_slide_wrap .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 10%;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
+    opacity: 0;
+}
+.swiper-button-next, .swiper-button-prev{
+    top: 42%;
+    color: rgba(0,0,0,.2);
+}
+:root{
+    --swiper-navigation-size: 36px;
+}

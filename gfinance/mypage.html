@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>G-Finance</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"><img src="img/logo.svg" alt="GFINANCE"></a></h1>
+                <button class="btn_nav mobile">
+                    <span>open menu</span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav_wrap">
+                    <h2 class="blind">주메뉴</h2>
+                    <div class="user">
+                        <div class="user_login">
+                            <a href="login.html">로그인</a>
+                            <a href="join.html">회원가입</a>
+                        </div>
+                        <div class="user_logout">
+                            <a href="#">로그아웃</a>
+                            <a href="mypage.html">마이페이지</a>
+                        </div>
+                    </div><!-- // user -->
+                    <button class="close_nav">
+                        <span>close</span>
+                        <span></span>
+                    </button>
+                    <div class="gnb">
+                        <ul class="clear">
+                            <li><a href="guide.html">이용안내</a></li>
+                            <li><a href="loan.html">대출서비스 신청</a></li>
+                            <li><a href="staking.html">예치서비스 신청</a></li>
+                            <li><a href="asset.html">자산현황</a></li>
+                            <li><a href="customer.html">고객센터</a></li>
+                        </ul>
+                    </div><!-- // gnb -->
+                </nav>
+                <div class="dim"></div>
+            </div><!-- // header_inner -->
+        </header>
+        <main class="join_wrap mypage">
+            <div class="sub_visual">
+                <h2>회원</h2>
+            </div><!-- // sub_visual -->
+            <div class="content">
+                <div class="content_inner">
+                    <div class="sub_title">
+                        <h2>마이페이지</h2>
+                        <p class="mobile_wth"><strong>홍길동</strong>님, 반갑습니다.<br>회원님의 개인정보를 조회/수정할 수 있습니다.</p>
+                    </div><!-- // sub_title -->
+                    <div class="mobile_wth pc_wth box_bdr sub_box">
+                        <div class="sub_box_inner join_form">
+                            <form action="#">
+                                <section class="join_info">
+                                    <h3>GFinance 회원정보 수정</h3>
+                                    <span class="pc font_red h3_smalltxt">* 필수 입력사항</span>
+                                    <fieldset>
+                                        <legend class="hide">정보수정</legend>
+                                        <ul>
+                                            <li>
+                                                <h5 class="essential">아이디</h5>
+                                                <div class="ipt_wrap ipt_btn_wrap">
+                                                    <input type="text" class="ipt" value="test" readonly>
+<!--                                                    <a href="#" class="form_btn">중복확인</a>-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5>추천인 아이디</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">와우팍스 회원아이디</h5>
+                                                <div class="ipt_wrap ipt_btn_wrap">
+                                                    <input type="text" class="ipt" value="test@test.co.kr" readonly>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">기존 비밀번호</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="password" class="ipt">
+<!--                                                    <p>수정시 기존 비밀번호를 필수로 입력해주세요.</p>-->
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">비밀번호 변경</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="password" class="ipt" placeholder="변경할 비밀번호를 입력해주세요.">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">이름</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt" value="홍길동" readonly>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">생년월일</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="number" class="ipt" value="20000101">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">휴대폰번호</h5>
+                                                <div class="ipt_wrap ipt_btn_wrap">
+                                                    <input type="number" class="ipt" value="01012345678">
+                                                    <a href="#" class="form_btn">본인인증</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">이메일</h5>
+                                                <div class="ipt_wrap ipt_btn_wrap">
+                                                    <input type="email" class="ipt" value="test@naver.com">
+                                                    <a href="#" class="form_btn">중복확인</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5>주소</h5>
+                                                <div class="ipt_wrap ipt_btn_wrap">
+                                                    <input type="number" class="ipt" value="05000" readonly>
+                                                    <a href="#" class="form_btn">주소검색</a>
+                                                </div>
+                                                <input type="text" class="ipt ipt_adr" value="서울시 OO구 OO로 OO(OO동, OOOO빌딩)" readonly>
+                                                <input type="text" class="ipt ipt_adr" value="903호">
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </section><!-- // join_info -->
+                                <section class="agree_wrap">
+                                    <h3>마케팅 정보 수신동의</h3>
+<!--                                    <span class="pc h3_smalltxt">아래 필수약관에 전체 동의하셔야 서비스 이용가능합니다.</span>-->
+                                    <fieldset>
+                                        <legend class="hide">마케팅 정보 수신동의 (선택)</legend>
+                                        <ul class="agree_group">
+<!--
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="agree_all" class="check_all">
+                                                    <label for="agree_all" class="agree_all">전체약관 동의</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_1" class="normal_check">
+                                                    <label for="agree_1">서비스 이용약관 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_2" class="normal_check">
+                                                    <label for="agree_2">개인정보 수집 및 이용 동의 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </li>
+-->
+                                            <li class="mkt_agree_group">
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_3" class="normal_check mkt_check_all">
+                                                    <label for="agree_3">마케팅 정보 수신동의 <span>(선택)</span></label>
+                                                </div>
+                                                <p class="mkt_wrap">
+                                                    <span>
+                                                        <input type="checkbox" id="agree_mkt_email" class="normal_check mkt_check">
+                                                        <label for="agree_mkt_email" class="#">E-Mail로 소식 받기</label>
+                                                    </span>
+                                                    <span>
+                                                        <input type="checkbox" id="agree_mkt_sms" class="normal_check mkt_check">
+                                                        <label for="agree_mkt_sms" class="#">SMS 알림 받기</label>
+                                                    </span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </section><!-- // agree_wrap -->
+                                <input type="submit" value="회원정보 변경" class="main_btn">
+                            </form>
+                        </div><!-- // sub_box_inner -->
+                    </div><!-- // sub_box -->
+                    <div class="to_leave mobile_wth pc_wth">
+                        회원탈퇴를 원하신다면 <a href="leave.html">이곳</a>을 눌러주세요.
+                    </div>
+                </div><!-- // content_inner -->
+            </div><!-- // content-->
+        </main>
+        <footer>
+            <a href="#" class="go_top">페이지 상단으로 이동</a>
+            <div class="footer_inner">
+                <div class="upper">
+                    <div class="upper_inner clear">
+                        <div class="footer_logo"><img src="img/logo_white.svg" alt="GFINANCE"></div>
+                        <p class="mobile_wth">대출금리 외 취급 수수료 등 기타 부대비용 없음.<br>이자 외 별도로 중개수수료를 수취하는 것은 불법입니다. 과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다.</p>
+                    </div><!-- // upper_inner -->
+                </div><!-- // upper -->
+                <div class="copy">
+                    <div class="copy_inner clear">
+                        <ul class="terms">
+                            <li><a href="terms.html">개인정보처리방침</a></li>
+                            <li><a href="terms.html">이용약관</a></li>
+                        </ul>
+                        <ul class="info">
+                            <li>TEL 1234-5678<span>FAX 02-1234-5678</span></li>
+                            <li>서울시 구로구 디지털로 31길 38-21 이앤씨벤쳐드림타워3차308호</li>
+                            <li>사업자번호 : 833-88-01241<span>대표 : 김남준</span></li>
+                            <li>주식회사 파워대부 대부번호 : 2019-서울구로-007</li>
+                        </ul>
+                        <p>COPYRIGHT &copy; 2021 G-Finance. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div><!-- // copy -->
+            </div><!-- // footer_inner -->
+        </footer>
+    </div><!-- // wrap -->
+</body>
+</html>

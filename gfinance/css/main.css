@@ -1,0 +1,624 @@
+@charset "utf-8";
+
+/* visual - mobile */
+.visual{
+    width: 100%;
+    height: 525px;
+    background: url(../img/vis_bg_1.jpg) no-repeat center/cover;
+    margin-top: 80px;
+    position: relative;
+}
+.visual .vis_inner{
+    padding-top: 77px;
+}
+.visual .vis_inner .vis_slider{}
+.visual .vis_inner .vis_slider .slide1{}
+
+.visual .vis_inner .vis_txt{
+    color: #fff;
+    text-align: center;
+}
+.visual .vis_inner .vis_txt strong{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.visual .vis_inner .vis_txt p span{display: block;}
+.visual .vis_inner .vis_txt p{
+    margin: 32px 0 30px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.visual .vis_inner .vis_txt a{
+    margin: 0 auto;
+}
+
+.visual .vis_inner>span{
+    display: block;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.3em;
+    padding: 50px;
+}
+.visual .vis_inner span:after{
+    content:'';
+    display: block;
+    background: rgba(255,255,255,.3);
+    width: 2px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left:-1px;
+    bottom:0;
+}
+
+/* main - mobile */
+section{
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+section>div>h2{
+    font-size: 2.4rem;
+}
+section>div>p{
+    margin-top: 9px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+section h4{font-size: 2rem; font-weight: 700;}
+
+/* price 실시간 시세 */
+.price{
+    padding: 35px 0 60px;
+}
+.price_inner>p{
+    color: #969696;
+    margin-bottom: 20px;
+}
+.price .price_slide .price_box{
+    width: 238px;
+    height: 108px;
+    text-align: left;
+    padding: 26px 0 0 12px;
+    position: relative;
+}
+.price .price_slide .price_box h4{
+    margin-bottom: 17px;
+}
+.price .price_slide .price_box p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.price .price_slide .price_box p>span{font-weight: 400;}
+.price .price_slide .price_box .price_logo{
+    width: 60px;
+    height: 60px;
+    background: url(../img/bitcoin_logo.png) no-repeat center/contain;
+    position: absolute;
+    right: 12px; top: 18px;
+}
+.price .price_slide .price_box:nth-child(2) .price_logo{
+    background-image: url(../img/ethereum_logo.png);
+}
+.price .price_slide .price_box:nth-child(3) .price_logo{
+    background-image: url(../img/gasset_logo.png);
+}
+/*
+.price .price_slide .price_box:nth-child(4) .price_logo{
+    background-image: url();
+}
+*/
+
+
+
+/* loan 대출서비스 */
+.loan{
+    padding-bottom: 77px;
+}
+.loan h2{
+    margin-bottom: 19px;
+}
+.loan .loan_box{
+    height: 212px;
+    text-align: left;
+    padding: 24px 0 0 7.111%; /* 48 / 675 */
+    position: relative;
+}
+.loan .loan_box h4{}
+.loan .loan_box p{
+    margin: 14px 0 24px;
+    font-size: 1.7rem;
+    line-height: 1.5;
+}
+.loan .loan_box p span{display: block;}
+.loan .loan_box a{width: 176px;}
+.loan .loan_box>span{
+    position: absolute;
+    right: 36px;
+    top: 94px;
+    width: 75px;
+    height: 67px;
+    background: url(../img/icon_money.svg) no-repeat center/contain;
+}
+.loan_inner>p{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* calc 대출 계산기 */
+.calc{
+    padding-bottom: 60px;
+}
+.calc .calc_box{
+    margin-top: 19px;
+    text-align: left;
+    border-color: #e9e9e9;
+    padding: 30px 0 40px 7.111%; /* 48 / 675 */
+    position: relative;
+}
+.calc .calc_box .calc_logo{
+    position: absolute;
+    width: 38px;
+    left: 51.852%; /* 350 / 675 */
+    top: 20px;
+}
+.calc .calc_box .calc_logo img{width: 100%;}
+.calc .calc_box ul,
+.calc .calc_box>div{float: left;}
+.calc .calc_box ul li{
+    margin-bottom: 7px;
+}
+.calc .calc_box ul li a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ccc;
+}
+.calc .calc_box ul li a.active{color: #222}
+
+.calc_amt_wrap{
+    margin-left: 10.074%; /* 68 / 675 */
+}
+.calc_amt_wrap>div>span{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.calc_amt_wrap p{margin: 20px 0 28px;}
+.calc_amt_wrap>a{margin-bottom: 27px;}
+.calc_amt_wrap .amt{font-size: 2.3rem; font-weight: 700;}
+.calc_amt_wrap .eth{display: none;}
+
+.calc .calc_box .calc_ipt_wrap{}
+.calc .calc_box .calc_ipt_wrap>div>div{position: relative;}
+.calc .calc_box .calc_ipt_wrap label{
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: block;
+}
+.calc .calc_box .calc_ipt_wrap .ipt{
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 18px;
+}
+.calc .calc_box .calc_ipt_wrap .currency{
+    position: absolute;
+    left: 200px; bottom: 10px;
+}
+.calc .calc_box .calc_ipt_wrap .right .currency{
+    left: 213px;
+}
+
+.calc .calc_box .calc_ipt_wrap .right{margin-top: 17px; margin-left:50px;}
+.calc .calc_box .calc_ipt_wrap .right>div{
+    width: 16px;
+    position: absolute;
+    left: -32px; bottom: 11px;
+}
+.calc .calc_box .calc_ipt_wrap .right>div img{width: 100%;}
+
+/* staking 가상자산 예치 */
+.staking{
+    margin-bottom: 60px;
+}
+.staking h2{margin-bottom: 20px;}
+.staking .staking_slide{}
+.staking .staking_slide .staking_box{
+    width: 238px;
+    height: 172px;
+    padding: 25px 0 0 12px;
+    text-align: left;
+    position: relative;
+}
+.staking .staking_slide .staking_box h5{
+    margin-bottom: 12px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.staking .staking_slide .staking_box .stk_logo{
+    width: 46px;
+    position: absolute;
+    left: 112px; top: 15px; /* 임시 */
+}
+.staking .staking_slide .staking_box .stk_logo img{width: 100%;}
+.rate_sml, .stk_detail li>div:first-child{color:#ccc;}
+.staking .staking_slide .staking_box .rate_sml{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.staking .staking_slide .staking_box .rate_wrap{
+    margin-top: 4px;
+    font-size: 2.3rem;
+}
+.staking .staking_slide .staking_box .rate_wrap b{
+    font-weight: 700;
+}
+.staking .staking_slide .staking_box .rate_wrap span{
+    font-weight: 700;
+}
+
+.staking .staking_slide .staking_box .stk_detail{
+    margin-top: 22px;
+}
+.staking .staking_slide .staking_box .stk_detail li{
+    margin-bottom: 7px;
+}
+.staking .staking_slide .staking_box .stk_detail li div{
+    width: 62px;
+    float: left;
+    font-size: 1.2rem;
+}
+.staking .staking_slide .staking_box>a{
+    width: 62px;
+    height: 26px;
+    line-height: 26px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 12px;
+    bottom: 24px;
+}
+.staking .staking_slide .staking_box .regular{
+    display: inline-block;
+    padding: 5px;
+    background: #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    color: #fff;
+    position: absolute;
+    right: 12px; top: 22px;
+}
+
+.staking_inner>p{
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+/* customer */
+.customer{
+    background: #f7f7f7;
+    padding: 20px 0 84px;
+}
+.customer .customer_inner{
+    text-align: left;
+}
+.customer .customer_inner h2{
+    font-size: 2.4rem;
+    margin-bottom: 24px;
+}
+.customer .customer_inner>div>p{
+    margin-bottom: 24px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.customer .contact{
+    padding-bottom: 60px;
+}
+.customer .contact .call{}
+.customer .contact .call h5{
+    float: left;
+    width: 22.222%; /* 150 / 675 */
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    
+}
+.customer .contact .call p{
+    float: left;
+    width: 77%;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+.customer .contact .call p a{
+    font-size: 2.3rem;
+}
+.customer .contact .call p span{
+    display: block;
+    color: #969696;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+/* pc */
+@media all and (min-width:1024px){
+
+    /* visual - pc */
+    .visual{
+        height: 680px;
+    }
+    .visual .vis_inner{
+        padding-top: 154px;
+    }
+    .visual .vis_inner .vis_slider{}
+    .visual .vis_inner .vis_slider .slide1{}
+
+    .visual .vis_inner .vis_txt{
+        width: auto;
+    }
+    .visual .vis_inner .vis_txt strong{
+        font-size: 5rem;
+    }
+    .visual .vis_inner .vis_txt p span{display: inline;}
+    .visual .vis_inner .vis_txt p{
+        margin: 42px 0 58px;
+        font-size: 2rem;
+    }
+    .visual .vis_inner .vis_txt a{width: 276px;}
+    
+    /* main - pc */
+    section{
+        text-align: left;
+    }
+    section>div{
+        width: 1176px;
+        margin: 0 auto;
+    }
+    section>div>p{
+        margin-top: 12px;
+        font-size: 1.6rem;
+    }
+    section h4{font-size: 2.6rem;}
+    
+    /* price 실시간 시세 - pc */
+    .price{
+        padding-bottom: 80px;
+    }
+    .price_inner>h2, .price_inner>p{display: inline-block;}
+    .price_inner>p{
+        margin-bottom: 16px;
+    }
+    .price .price_slide .price_box{
+        width: 376px;
+        height: 140px;
+        padding: 34px 0 0 36px;
+    }
+    .price .price_slide .price_box h4{
+        margin-bottom: 23px;
+    }
+    .price .price_slide .price_box p{
+        font-size: 2.4rem;
+    }
+    .price .price_slide .price_box .price_logo{
+        width: 100px;
+        height: 100px;
+        right: 21px;
+    }
+    
+    /* loan 대출서비스 - pc */
+    .loan{
+        padding-bottom: 50px;
+    }
+    .wrap .h2_left{
+        padding-top: 12px;
+        margin-bottom: 0;
+        float: left;
+    }
+    .wrap .box_right{
+        float: right;
+        width: 976px;
+    }
+    .loan .loan_box{
+        height: 180px;
+        margin: 0;
+        padding: 53px 0 0 198px;
+    }
+    .loan .loan_box p{
+        margin: 23px 0 0;
+        font-size: 2.2rem;
+    }
+    .loan .loan_box p span{display: inline;}
+    .loan .loan_box a{
+        position: absolute;
+        right: 53px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .loan .loan_box>span{
+        right: auto;
+        left: 48px;
+        transform: translateY(-50%);
+        top: 50%;
+        width: 100px;
+        height: 89px;
+    }
+    .loan_inner>p{
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+    
+    /* calc 대출 계산기 - pc */
+    .calc{
+        padding-bottom: 80px;
+    }
+    .calc .calc_box{
+        margin: 0;
+        padding: 30px 0 32px 198px;
+    }
+    .calc .calc_box .calc_logo{
+        width: 76px;
+        left: 50px;
+        top: 27px;
+    }
+    .calc .calc_box ul{width: 200px;}
+    .calc .calc_box ul li{
+        margin-bottom: 10px;
+    }
+    .calc .calc_box ul li a{
+        font-size: 2.4rem;
+    }
+    .calc_amt_wrap{
+        margin-left: 0;
+        padding-top: 5px;
+        width: 574px;
+        position: relative;
+    }
+    .calc_amt_wrap>div>span{
+        font-size: 2.2rem;
+    }
+    .calc_amt_wrap p{margin: 24px 0 0;}
+    .calc_amt_wrap>a{
+        margin-bottom: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 53px;
+    }
+    .calc_amt_wrap .amt{font-size: 3rem;}
+    
+    .calc .calc_box .calc_ipt_wrap{margin-top: 20px;}
+    .calc .calc_box .calc_ipt_wrap .left{float: left;}
+    .calc .calc_box .calc_ipt_wrap .right{float: right;}
+    .calc .calc_box .calc_ipt_wrap .ipt{
+        width: 300px;
+        height: 46px;
+        font-size: 2.2rem;
+        padding-left: 11px;
+    }
+    .calc .calc_box .calc_ipt_wrap .currency{
+        left: auto;
+        right: 12px;
+        bottom: 15px;
+    }
+    .calc .calc_box .calc_ipt_wrap .right .currency{
+        left: auto;
+    }
+    .calc .calc_box .calc_ipt_wrap .right{margin-top: 0; margin-left: 152px;}
+    .calc .calc_box .calc_ipt_wrap .right>div{
+        width: 24px;
+        left: -80px;
+    }
+    
+    /* staking 가상자산 예치 - pc */
+    .staking{
+        margin-bottom: 80px;
+    }
+    .staking .staking_slide .staking_box{
+        width: 310px;
+        height: 210px;
+        padding: 28px 0 0 24px;
+    }
+    .staking .staking_slide .staking_box h5{
+        margin-bottom: 25px;
+        font-size: 2.4rem;
+    }
+    .staking .staking_slide .staking_box .stk_logo{
+        left: 120px; top: 20px;
+    }
+    .staking .staking_slide .staking_box .rate_sml{
+        font-size: 1.4rem;
+    }
+    .staking .staking_slide .staking_box .rate_wrap{
+        font-size: 3rem;
+    }
+    .staking .staking_slide .staking_box .stk_detail li div{
+        width: 75px;
+        font-size: 1.4rem;
+    }
+    .staking .staking_slide .staking_box>a{
+        width: 76px;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        right: 22px;
+        bottom: 28px;
+    }
+    .staking .staking_slide .staking_box .regular{
+        padding: 6px;
+        font-size: 1.4rem;
+        right: 22px; top: 28px;
+    }
+    .staking_inner>p{
+        margin-top: 10px;
+        font-size: 1.4rem;
+    }
+    
+    /* customer - pc */
+    .customer{
+        padding: 45px 0 80px;
+    }
+    .customer .customer_inner{
+        width: 1176px;
+    }
+    .customer .customer_inner h2{
+        font-size: 2.4rem;
+        margin-bottom: 20px;
+    }
+    .customer .customer_inner>div>p{
+        margin-bottom: 40px;
+        font-size: 1.6rem;
+    }
+    .customer .contact{
+        padding-bottom: 0;
+        float: left;
+        width: 600px;
+    }
+    .customer .contact .call h5{
+        width: 100px;
+        font-size: 1.6rem;
+        margin-bottom: 36px;
+    }
+    .customer .contact .call p{
+        width: auto;
+        font-size: 2.2rem;
+    }
+    .customer .contact .call p a{
+        font-size: 3rem;
+    }
+    .customer .contact .call p span{
+        font-size: 1.4rem;
+        margin-top: 10px;
+    }
+    
+}
+
+/* slider pagination */
+.swiper-pagination{position: static; margin-top: 10px;}
+.swiper-pagination-bullet-active{background: #00205b;}
+
+@media all and (min-width:1024px){
+    .staking_inner .swiper-pagination{margin-top: 220px;}
+}
+
+/* slider navigation */
+@media all and (max-width:1023px){
+    .swiper-button-next,
+    .swiper-button-prev{display: none;}
+}
+
+
+

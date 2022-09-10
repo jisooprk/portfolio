@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>봉투</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap vh100">
+        <div class="left_pc">
+            <div class="top_logo">
+                <img src="img/left_top.png" alt="봉투">
+            </div>
+            <div class="qr_wrap gray_bg">
+                <div><img src="img/qr_bong2.png" alt="봉투 바로가기"></div>
+                <div class="qr_txt">
+                    <h3>경조사 보내기 및 공유하는 방법</h3>
+                    <p>1. 봉투 서비스 회원 가입 후 모바일 경조사 생성<br>2. PC 또는 스마트폰에서 봉투 사이트 접속<br>3. 모바일 청첩장, 부고, 돌잔치, 모임 초대장의 카카오톡, 문자 공유버튼을 이용하시거나, 개별 경조사에 생성된 QR을 공유해 주세요.<br>4. 초대 받은 가족 및 지인분들은 회원가입 없이 간편하게 이용 가능합니다.</p>
+                </div>
+            </div>
+        </div><!-- // left_pc -->
+        <div class="right_mobile sub">
+            <header>
+                <div class="header_inner inner_wth clear">
+                    <div class="back" onclick="history.back(-1);"><img src="img/back.svg"></div>
+<!--                    <h1 class="logo"><a href="index.html"><img src="img/bong2_logo.svg" alt="봉투"></a></h1>-->
+                    <h2 class="header_title">회원가입</h2>
+<!--                    <a href="#"><img src="img/user.svg" alt="마이페이지"></a>-->
+                </div>
+            </header>
+            <main class="join">
+                <div>
+                    <div class="join_frm_wrap fff_bg">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="hide">정보입력</legend>
+                                <ul class="inner_wth">
+                                    <li>
+                                        <h5 class="essential">이름</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="text" class="ipt">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">아이디</h5>
+                                        <div class="ipt_wrap ipt_btn_wrap">
+                                            <input type="text" class="ipt" placeholder="4~10자의 영문 및 숫자 조합">
+                                            <a href="#" class="form_btn black_bg btn_bdr">중복확인</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">비밀번호</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="password" class="ipt" placeholder="8~12자 영문, 숫자, 특수기호 중 2가지 조합">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">비밀번호 확인</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="password" class="ipt">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">휴대폰번호</h5>
+                                        <div class="ipt_wrap ipt_btn_wrap">
+                                            <input type="number" class="ipt" placeholder="'-'없이 숫자 입력">
+                                            <a href="#" class="form_btn black_bg btn_bdr">본인인증</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">생년월일</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="number" class="ipt" placeholder="YYYY/MM/DD(ex : 20000101)">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5 class="essential">이메일</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="email" class="ipt">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5>추천인 코드 (선택)</h5>
+                                        <div class="ipt_wrap">
+                                            <input type="text" class="ipt">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="hide">서비스 이용약관</legend>
+                                <div class="agree_group bt8">
+                                    <ul class="inner_wth">
+                                        <li>
+                                            <div>
+                                                <input type="checkbox" id="agree_all" class="check_all">
+                                                <label for="agree_all" class="agree_all">전체약관 동의</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="agree_1" class="normal_check">
+                                                <label for="agree_1">회원가입 및 이용 약관 동의 <span class="pink_txt">(필수)</span></label>
+                                                <a href="#" class="agree_open">내용보기 </a>
+                                            </div>
+                                            <div class="agree_txt lgray_bg">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="agree_2" class="normal_check">
+                                                <label for="agree_2">개인정보처리방침 약관 동의 <span class="pink_txt">(필수)</span></label>
+                                                <a href="#" class="agree_open">내용보기 </a>
+                                            </div>
+                                            <div class="agree_txt lgray_bg">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="agree_3" class="normal_check">
+                                                <label for="agree_3">개인정보 제 3자 제공 동의 <span class="pink_txt">(필수)</span></label>
+                                                <a href="#" class="agree_open">내용보기 </a>
+                                            </div>
+                                            <div class="agree_txt lgray_bg">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="mkt_agree_group">
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="agree_4" class="normal_check mkt_check_all">
+                                                <label for="agree_4">마케팅 정보 수신동의 <span>(선택)</span></label>
+                                            </div>
+                                            <p class="mkt_wrap">
+                                                <span>
+                                                    <input type="checkbox" id="agree_mkt_email" class="normal_check mkt_check">
+                                                    <label for="agree_mkt_email" class="#">E-Mail로 소식 받기</label>
+                                                </span>
+                                                <span>
+                                                    <input type="checkbox" id="agree_mkt_sms" class="normal_check mkt_check">
+                                                    <label for="agree_mkt_sms" class="#">SMS 알림 받기</label>
+                                                </span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </fieldset>
+                            
+                            <div class="join_policy inner_wth">
+                                <p>본인은 만 14세 이상이며, 이용 약관 및 개인정보처리방침에 동의합니다.</p>
+                                <table cellpadding="0" cellspacing="0">
+                                    <caption class="hide">개인정보처리방침</caption>
+                                    <colgroup>
+                                        <col width="38%">
+                                        <col width="38%">
+                                        <col width="24%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>목적</th>
+                                            <th>항목</th>
+                                            <th>보유기간</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>이용자 식별 및 본인여부 확인</td>
+                                            <td>이름, 아이디, 비밀번호</td>
+                                            <td>회원 탈퇴시까지</td>
+                                        </tr>
+                                        <tr>
+                                            <td>고객서비스 이용에 관한 통지/CS대응을 위한 이용자 식별</td>
+                                            <td>연락처(휴대폰 번호, 이메일)</td>
+                                            <td>회원 탈퇴시까지</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_area inner_wth">
+                                <input type="submit" class="black_bg btn_bdr sub_btn" value="회원가입하기">
+                            </div>
+                            
+                            
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="fff_bg">
+                <p class="dgray_txt">COPYRIGHT &copy; 봉투 ALL RIGHTS RESERVED.</p>
+            </footer>
+        </div><!-- // right_mobile -->
+    </div>
+</body>
+</html>

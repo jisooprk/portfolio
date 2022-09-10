@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>봉투</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap vh100">
+        <div class="left_pc">
+            <div class="top_logo">
+                <img src="img/left_top.png" alt="봉투">
+            </div>
+            <div class="qr_wrap gray_bg">
+                <div><img src="img/qr_bong2.png" alt="봉투 바로가기"></div>
+                <div class="qr_txt">
+                    <h3>경조사 보내기 및 공유하는 방법</h3>
+                    <p>1. 봉투 서비스 회원 가입 후 모바일 경조사 생성<br>2. PC 또는 스마트폰에서 봉투 사이트 접속<br>3. 모바일 청첩장, 부고, 돌잔치, 모임 초대장의 카카오톡, 문자 공유버튼을 이용하시거나, 개별 경조사에 생성된 QR을 공유해 주세요.<br>4. 초대 받은 가족 및 지인분들은 회원가입 없이 간편하게 이용 가능합니다.</p>
+                </div>
+            </div>
+        </div><!-- // left_pc -->
+        <div class="right_mobile sub">
+            <header>
+                <div class="header_inner inner_wth clear">
+                    <div class="back" onclick="history.back(-1);"><img src="img/back.svg"></div>
+<!--                    <h1 class="logo"><a href="index.html"><img src="img/bong2_logo.svg" alt="봉투"></a></h1>-->
+                    <h2 class="header_title">돌잔치 초대장</h2>
+                    <a href="mypage.html"><img src="img/user.svg" alt="마이페이지"></a>
+                </div>
+            </header>
+            <main class="event_write">
+                <div>
+                    <div class="step_wrap">
+                        <ul>
+                            <li>
+                                <span class="dgray_bg">STEP1</span>
+                                <p>돌잔치 정보 입력</p>
+                            </li>
+                            <li>
+                                <span class="pink_bg">STEP2</span>
+                                <p>가족 정보 입력</p>
+                            </li>
+                        </ul>
+                    </div><!-- // step_wrap -->
+                    
+                    <div class="event_write_frm_wrap fff_bg bt8">
+                        <form action="#">
+                            <fieldset>
+                                <legend class="hide">돌잔치 초대장</legend>
+                                <div class="frm_title">
+                                    가족 정보 입력
+                                </div>
+                                <ul class="inner_wth clear">
+                                    <li class="added_info">
+                                        <ul>
+                                            <li class="w50 pr6">
+                                                <h5 class="essential">관계</h5>
+                                                <div class="ipt_wrap">
+                                                    <select name="#" id="#" class="ipt">
+                                                        <option value="아버지">아버지</option>
+                                                        <option value="어머니">어머니</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="w50 pl6">
+                                                <h5>관계 직접입력</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5 class="essential">성함</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li class="w50 pr6">
+                                                <h5 class="essential">연락처</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="number" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li class="w50 pl6">
+                                                <h5>계좌 정보</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt" placeholder="은행명/계좌번호/예금주">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="added_info">
+                                        <ul>
+                                            <li class="w50 pr6">
+                                                <h5>관계</h5>
+                                                <div class="ipt_wrap">
+                                                    <select name="#" id="#" class="ipt">
+                                                        <option value="아버지">아버지</option>
+                                                        <option value="어머니">어머니</option>
+                                                        <option value="">직접입력</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="w50 pl6">
+                                                <h5>관계 직접입력</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <h5>성함</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li class="w50 pr6">
+                                                <h5>연락처</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="number" class="ipt">
+                                                </div>
+                                            </li>
+                                            <li class="w50 pl6">
+                                                <h5>계좌 정보</h5>
+                                                <div class="ipt_wrap">
+                                                    <input type="text" class="ipt" placeholder="은행명/계좌번호/예금주">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            
+                            <div class="bt8">
+                                <fieldset>
+                                    <legend class="hide">돌잔치 초대장</legend>
+                                    <div class="frm_title">
+                                        답례품 등록
+                                    </div>
+                                    <ul class="inner_wth clear">
+                                        <li class="gift">
+                                            <ul>
+                                                <li class="w50">
+                                                    <input type="checkbox" id="gift01">
+                                                    <label for="gift01">
+                                                        <b>답례품 1</b>
+                                                        <span class="gift_img">
+                                                            <img src="img/gift_test.jpg" alt="답례품">
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="w50">
+                                                    <input type="checkbox" id="gift02">
+                                                    <label for="gift02">
+                                                        <b>답례품 2</b>
+                                                        <span class="gift_img">
+                                                            <img src="img/gift_test.jpg" alt="답례품">
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <!-- <li class="w50">
+                                                    <input type="checkbox" id="gift03">
+                                                    <label for="gift03">
+                                                        <b>답례품 3</b>
+                                                        <span class="gift_img">
+                                                            <img src="img/gift_test.jpg" alt="답례품">
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="w50">
+                                                    <input type="checkbox" id="gift04">
+                                                    <label for="gift04">
+                                                        <b>답례품 4</b>
+                                                        <span class="gift_img">
+                                                            <img src="img/gift_test.jpg" alt="답례품">
+                                                        </span>
+                                                    </label>
+                                                </li>
+                                                <li class="w50">
+                                                    <input type="checkbox" id="gift05">
+                                                    <label for="gift05">
+                                                        <b>답례품 5</b>
+                                                        <span class="gift_img">
+                                                            <img src="img/gift_test.jpg" alt="답례품">
+                                                        </span>
+                                                    </label>
+                                                </li> -->
+
+                                            </ul>
+                                        </li>
+                                        <li class="gift_notice">
+                                            <p class="dgray_txt">※ 답례품은 모바일 PIN번호로 발송되는 모바일 쿠폰만 제공 가능하며, 전체 추가 가능합니다.</p>
+                                        </li>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                            <div class="btn_area inner_wth dflex btn_dflex">
+                                <a href="birthday_preview.html" class="dgray_bg btn_bdr sub_btn w50" target="_blank">미리보기</a>
+                                <input type="submit" class="pink_bg btn_bdr sub_btn w50" value="초대장 만들기">
+                            </div>
+                        </form>
+                    </div><!-- // event_write_frm_wrap -->
+                </div>
+            </main>
+            <footer class="fff_bg">
+                <p class="dgray_txt">COPYRIGHT &copy; 봉투 ALL RIGHTS RESERVED.</p>
+            </footer>
+        </div><!-- // right_mobile -->
+    </div>
+</body>
+</html>

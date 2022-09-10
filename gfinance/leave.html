@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>G-Finance</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"><img src="img/logo.svg" alt="GFINANCE"></a></h1>
+                <button class="btn_nav mobile">
+                    <span>open menu</span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav_wrap">
+                    <h2 class="blind">주메뉴</h2>
+                    <div class="user">
+                        <div class="user_login">
+                            <a href="login.html">로그인</a>
+                            <a href="join.html">회원가입</a>
+                        </div>
+                        <div class="user_logout">
+                            <a href="#">로그아웃</a>
+                            <a href="mypage.html">마이페이지</a>
+                        </div>
+                    </div><!-- // user -->
+                    <button class="close_nav">
+                        <span>close</span>
+                        <span></span>
+                    </button>
+                    <div class="gnb">
+                        <ul class="clear">
+                            <li><a href="guide.html">이용안내</a></li>
+                            <li><a href="loan.html">대출서비스 신청</a></li>
+                            <li><a href="staking.html">예치서비스 신청</a></li>
+                            <li><a href="asset.html">자산현황</a></li>
+                            <li><a href="customer.html">고객센터</a></li>
+                        </ul>
+                    </div><!-- // gnb -->
+                </nav>
+                <div class="dim"></div>
+            </div><!-- // header_inner -->
+        </header>
+        <main class="mypage">
+            <div class="sub_visual">
+                <h2>회원</h2>
+            </div><!-- // sub_visual -->
+            <div class="content">
+                <div class="content_inner">
+                    <div class="sub_title">
+                        <h2>마이페이지</h2>
+                        <p class="mobile_wth"><strong>홍길동</strong>님, 반갑습니다.<br>회원님의 개인정보를 조회/수정할 수 있습니다.</p>
+                    </div><!-- // sub_title -->
+                    <div class="mobile_wth pc_wth box_bdr sub_box leave">
+                        <div class="sub_box_inner">
+                            <h3>GFinance 회원탈퇴</h3>
+                            <form action="#">
+                                <section class="process_wrap">
+                                    <h4>회원탈퇴 프로세스</h4>
+                                    <div class="process">
+                                        <div class="process_box box_bdr">
+                                            회원탈퇴 안내
+                                        </div><!-- // process_box -->
+                                        <span class="process_arr">
+                                            <img src="img/icon_calc_arrow.svg" alt="arrow">
+                                        </span><!-- // process_arr -->
+                                        <div class="process_box box_bdr">
+                                            보유자산 확인
+                                        </div><!-- // process_box -->
+                                        <span class="process_arr">
+                                            <img src="img/icon_calc_arrow.svg" alt="arrow">
+                                        </span><!-- // process_arr -->
+                                        <div class="process_box box_bdr">
+                                            동의 체크
+                                        </div><!-- // process_box -->
+                                        <span class="process_arr">
+                                            <img src="img/icon_calc_arrow.svg" alt="arrow">
+                                        </span><!-- // process_arr -->
+                                        <div class="process_box box_bdr">
+                                            탈퇴 신청
+                                        </div><!-- // process_box -->
+                                        <span class="process_arr">
+                                            <img src="img/icon_calc_arrow.svg" alt="arrow">
+                                        </span><!-- // process_arr -->
+                                        <div class="process_box box_bdr">
+                                            회원탈퇴 완료
+                                        </div><!-- // process_box -->
+                                    </div><!-- // process -->
+                                    <p>※ 회원탈퇴 신청 후 탈퇴 서류 필요시 고객센터에서 연락드릴 수 있습니다.</p>
+                                </section><!-- // process_wrap -->
+                                <section class="agree_wrap">
+                                    <fieldset>
+                                        <legend class="hide">잔고삭감 동의 후 회원탈퇴 동의</legend>
+                                        <h4>잔고삭감 동의 후 회원탈퇴 동의</h4>
+                                        <div class="agree_box">
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="leave_agree_1" class="normal_check">
+                                                <label for="leave_agree_1">잔고삭감 동의 후 회원탈퇴 동의 <span class="font_red">(필수)</span></label>
+                                            </div>
+                                            <div class="agree_txt">
+                                                ※ 출금 불가능한 잔고를 보유 고객에 한해 잔고삭감 동의 후 탈퇴 진행이 가능합니다.<br>※ 잔액이 남아 있으면 회원탈퇴 불가하니, 탈퇴 전 회원님의 원화, 암호화폐 잔액을 출금해주세요.<br>※ 회원 탈퇴시, GFinance에 등록된 개인정보는 모두 삭제되며 복구되지 않습니다. 단, 관계법령에 따라 회사가 보관하여야 하는 정보는 일정 기간 보관됩니다.<br>※ 회원탈퇴 후에는 고객님의 원화, 암호화폐 정보가 모두 파기됩니다.
+                                            </div>
+                                        </div><!-- // agree_box -->
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend class="hide">회원탈퇴 동의</legend>
+                                        <h4>회원탈퇴 동의</h4>
+                                        <div class="agree_box">
+                                            <div class="agree_title">
+                                                <input type="checkbox" id="leave_agree_2" class="normal_check">
+                                                <label for="leave_agree_2" class="pos_top">회원탈퇴 전 유의사항에 대해 충분히 확인하였으며, 회원탈퇴를 신청합니다. <span class="font_red">(필수)</span></label>
+                                            </div>
+                                            <div class="agree_txt">
+                                                <div>
+                                                    <h5>1. 회원탈퇴 불가 사유</h5>
+                                                    <div class="reason_wrap">
+                                                        <div class="reason_box box_bdr">
+                                                            <div>
+                                                                <div>
+                                                                    <img src="img/leave_1.svg" alt="진행중인 거래">
+                                                                </div>
+                                                            </div>
+                                                            <p>진행중인 거래가<br>있는 경우</p>
+                                                        </div>
+                                                        <div class="reason_box box_bdr">
+                                                            <div>
+                                                                <div>
+                                                                    <img src="img/leave_2.svg" alt="보유잔고">
+                                                                </div>
+                                                            </div>
+                                                            <p>보유잔고가<br>있는 경우</p>
+                                                        </div>
+                                                        <div class="reason_box box_bdr">
+                                                            <div>
+                                                                <div>
+                                                                    <img src="img/leave_3.svg" alt="미체결 거래건">
+                                                                </div>
+                                                            </div>
+                                                            <p>미체결 거래건이<br>있는 경우</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt24 mt30_pc">
+                                                    <h5>2. 회원정보 삭제(보관 정보와 기간)</h5>
+                                                    <div class="dispose_wrap">
+                                                        <table cellpadding="0" cellspacing="0">
+                                                            <caption class="hide">회원정보 삭제(보관 정보와 기간)</caption>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>구분</th>
+                                                                    <th>계약 또는 청약철회 기록</th>
+                                                                    <th>대금결제 및 재화 등의 공급 기록</th>
+                                                                    <th>소비자 불만 또는 분쟁 처리 기록</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>보존 근거</th>
+                                                                    <td>전자상거래 등에서의<br>소비자보호에 관한 법률</td>
+                                                                    <td>전자상거래 등에서의<br>소비자보호에 관한 법률</td>
+                                                                    <td>전자상거래 등에서의<br>소비자보호에 관한 법률</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>보존 기간</th>
+                                                                    <td>5년</td>
+                                                                    <td>5년</td>
+                                                                    <td>5년</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- // agree_box -->
+                                    </fieldset>
+                                </section><!-- // agree_wrap -->
+                                <input type="submit" value="회원탈퇴 신청하기" class="main_btn">
+                            </form>
+                        </div><!-- // sub_box_inner -->
+                    </div><!-- // sub_box -->
+                </div><!-- // content_inner -->
+            </div><!-- // content-->
+        </main>
+        <footer>
+            <a href="#" class="go_top">페이지 상단으로 이동</a>
+            <div class="footer_inner">
+                <div class="upper">
+                    <div class="upper_inner clear">
+                        <div class="footer_logo"><img src="img/logo_white.svg" alt="GFINANCE"></div>
+                        <p class="mobile_wth">대출금리 외 취급 수수료 등 기타 부대비용 없음.<br>이자 외 별도로 중개수수료를 수취하는 것은 불법입니다. 과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다.</p>
+                    </div><!-- // upper_inner -->
+                </div><!-- // upper -->
+                <div class="copy">
+                    <div class="copy_inner clear">
+                        <ul class="terms">
+                            <li><a href="terms.html">개인정보처리방침</a></li>
+                            <li><a href="terms.html">이용약관</a></li>
+                        </ul>
+                        <ul class="info">
+                            <li>TEL 1234-5678<span>FAX 02-1234-5678</span></li>
+                            <li>서울시 구로구 디지털로 31길 38-21 이앤씨벤쳐드림타워3차308호</li>
+                            <li>사업자번호 : 833-88-01241<span>대표 : 김남준</span></li>
+                            <li>주식회사 파워대부 대부번호 : 2019-서울구로-007</li>
+                        </ul>
+                        <p>COPYRIGHT &copy; 2021 G-Finance. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div><!-- // copy -->
+            </div><!-- // footer_inner -->
+        </footer>
+    </div><!-- // wrap -->
+</body>
+</html>

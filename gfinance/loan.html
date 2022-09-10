@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>G-Finance</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sub.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"><img src="img/logo.svg" alt="GFINANCE"></a></h1>
+                <button class="btn_nav mobile">
+                    <span>open menu</span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav_wrap">
+                    <h2 class="blind">주메뉴</h2>
+                    <div class="user">
+                        <div class="user_login">
+                            <a href="login.html">로그인</a>
+                            <a href="join.html">회원가입</a>
+                        </div>
+                        <div class="user_logout">
+                            <a href="#">로그아웃</a>
+                            <a href="mypage.html">마이페이지</a>
+                        </div>
+                    </div><!-- // user -->
+                    <button class="close_nav">
+                        <span>close</span>
+                        <span></span>
+                    </button>
+                    <div class="gnb">
+                        <ul class="clear">
+                            <li><a href="guide.html">이용안내</a></li>
+                            <li><a href="loan.html">대출서비스 신청</a></li>
+                            <li><a href="staking.html">예치서비스 신청</a></li>
+                            <li><a href="asset.html">자산현황</a></li>
+                            <li><a href="customer.html">고객센터</a></li>
+                        </ul>
+                    </div><!-- // gnb -->
+                </nav>
+                <div class="dim"></div>
+            </div><!-- // header_inner -->
+        </header>
+        <main class="loan_wrap">
+            <div class="sub_visual">
+                <h2>대출서비스 신청</h2>
+            </div><!-- // sub_visual -->
+            <div class="content">
+                <div class="content_inner">
+                    <div class="sub_title">
+                        <h2>대출서비스 신청</h2>
+                        <p class="mobile_wth">최소 100만원부터 대출 가능하며 대출기간은 최소 15일부터 최장 12개월까지 가능합니다.<br>담보 코인의 원화가치에서 최소 10%에서 60%까지 대출이 가능하며<br>서비스신청 후 10분 이내 담당자가 연락 드리겠습니다.</p>
+                    </div><!-- // sub_title -->
+                    <div class="mobile_wth pc_wth box_bdr sub_box">
+                        <div class="sub_box_inner">
+                            <h3>대출정보 입력</h3>
+                            <form action="#">
+                                <section class="info_deal">
+                                    <h4>거래정보</h4>
+                                    <fieldset>
+                                        <legend class="hide">거래정보</legend>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <caption class="hide">거래정보</caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th>대출 종류</th>
+                                                    <td class="txt">원화(KRW) : 현금 대출만 신청 가능</td>
+                                                    <th>이용 기간</th>
+                                                    <td>
+                                                        <select name="#" id="#" class="ipt">
+                                                            <option value="기간 선택">기간 선택</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>담보코인</th>
+                                                    <td>
+                                                        <select name="#" id="#" class="ipt">
+                                                            <option value="코인 선택">코인 선택</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>담보코인 수량</th>
+                                                    <td>
+                                                        <input type="number" class="ipt">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>담보코인 거래소</th>
+                                                    <td>
+                                                        <select name="#" id="#" class="ipt">
+                                                            <option value="코인거래소 선택">코인거래소 선택</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>담보코인 지갑주소</th>
+                                                    <td>
+                                                        <input type="text" class="ipt">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </fieldset>
+                                </section><!-- // info_deal -->
+                                <section class="info_account">
+                                    <h4>계좌정보</h4>
+                                    <fieldset>
+                                        <legend class="hide">계좌정보</legend>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <caption class="hide">계좌정보</caption>
+                                            <tbody>
+                                                <tr>
+                                                    <th>은행명</th>
+                                                    <td>
+                                                        <select name="#" id="#" class="ipt">
+                                                            <option value="은행 선택">은행 선택</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>계좌번호</th>
+                                                    <td class="txt">자동표시</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>예금주</th>
+                                                    <td>
+                                                        <input type="text" class="ipt">
+                                                    </td>
+                                                    <th>연락처</th>
+                                                    <td>
+                                                        <input type="number" class="ipt">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </fieldset>
+                                </section><!-- // info_account -->
+                                <section class="agree_loan agree_wrap">
+                                    <h3>서비스 이용약관 <span class="font_red">(필수)</span></h3>
+                                    <span class="pc h3_smalltxt">아래 필수약관에 전체 동의하셔야 서비스 이용가능합니다.</span>
+                                    <fieldset>
+                                        <legend class="hide">서비스 이용약관</legend>
+                                        <ul class="agree_group">
+                                            <li>
+                                                <div>
+                                                    <input type="checkbox" id="agree_all" class="check_all">
+                                                    <label for="agree_all" class="agree_all">전체약관 동의</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_1" class="normal_check">
+                                                    <label for="agree_1">가상자산 대출서비스 이용약관 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_2" class="normal_check">
+                                                    <label for="agree_2">서비스 이용약관 동의 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_3" class="normal_check">
+                                                    <label for="agree_3">개인정보 수집 동의 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <div class="agree_title">
+                                                    <input type="checkbox" id="agree_4" class="normal_check">
+                                                    <label for="agree_4">전자서명 동의 <span class="font_red">(필수)</span></label>
+                                                    <span class="agree_open"></span>
+                                                </div>
+                                                <p class="agree_txt">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora consequuntur possimus culpa! Tenetur magni sunt sequi. Laudantium non quibusdam voluptates dolore, sequi, ex doloremque fugiat magni ducimus odit inventore quae. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </section>
+                                <input type="submit" value="대출 신청" class="main_btn">
+                            </form>
+                        </div><!-- // sub_box_inner -->
+                    </div><!-- // pc_wth -->
+                </div><!-- // content_inner -->
+            </div><!-- // content-->
+        </main>
+        <footer>
+            <a href="#" class="go_top">페이지 상단으로 이동</a>
+            <div class="footer_inner">
+                <div class="upper">
+                    <div class="upper_inner clear">
+                        <div class="footer_logo"><img src="img/logo_white.svg" alt="GFINANCE"></div>
+                        <p class="mobile_wth">대출금리 외 취급 수수료 등 기타 부대비용 없음.<br>이자 외 별도로 중개수수료를 수취하는 것은 불법입니다. 과도한 빚은 당신에게 큰 불행을 안겨줄 수 있습니다.</p>
+                    </div><!-- // upper_inner -->
+                </div><!-- // upper -->
+                <div class="copy">
+                    <div class="copy_inner clear">
+                        <ul class="terms">
+                            <li><a href="terms.html">개인정보처리방침</a></li>
+                            <li><a href="terms.html">이용약관</a></li>
+                        </ul>
+                        <ul class="info">
+                            <li>TEL 1234-5678<span>FAX 02-1234-5678</span></li>
+                            <li>서울시 구로구 디지털로 31길 38-21 이앤씨벤쳐드림타워3차308호</li>
+                            <li>사업자번호 : 833-88-01241<span>대표 : 김남준</span></li>
+                            <li>주식회사 파워대부 대부번호 : 2019-서울구로-007</li>
+                        </ul>
+                        <p>COPYRIGHT &copy; 2021 G-Finance. ALL RIGHTS RESERVED.</p>
+                    </div>
+                </div><!-- // copy -->
+            </div><!-- // footer_inner -->
+        </footer>
+    </div><!-- // wrap -->
+</body>
+</html>
