@@ -436,7 +436,7 @@ p{
     background: url(../img/email.svg) no-repeat center/contain;
 }
 .last_txt .order li:nth-child(2):before{
-    background-image: url(../img/github.svg);
+    background-image: url(../img/code.svg);
 }
 
 .drawing_last{
